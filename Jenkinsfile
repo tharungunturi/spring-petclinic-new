@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('git clone') {
             steps {
-                git branch: '2.1-master', credentialsId: 'tharun', url: 'https://github.com/tharungunturi/thymeleafexamples-petclinic.git'
+                git branch: 'main', credentialsId: 'tharun', url: 'https://github.com/tharungunturi/spring-petclinic-new.git'
             }
         }
 

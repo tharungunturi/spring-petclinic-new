@@ -7,9 +7,10 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'clean package'
+    mavenPomFile: 'pom.xml'   # adjust if your pom.xml is in a subfolder
+    goals: 'clean package -DskipTests'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.17'
+    jdkVersionOption: '17'
     mavenVersionOption: 'Default'
+
 

@@ -17,16 +17,6 @@
   
   <properties>
     <java.version>17</java.version>
-  </properties>
-  
-  <distributionManagement>
-    <snapshotRepository>
-        <id>nexus-snapshots</id> 
-        <name>Nexus Snapshots Repository</name>
-        <url>http://18.222.152.122:8081/repository/maven-snapshots/</url> 
-    </snapshotRepository>
-  </distributionManagement>
-
     <!-- Generic properties -->
     <java.version>17</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,6 +38,14 @@
     <spring-format.version>0.0.47</spring-format.version>
 
   </properties>
+  
+   <distributionManagement>
+    <snapshotRepository>
+        <id>nexus-snapshots</id> 
+        <name>Nexus Snapshots Repository</name>
+        <url>http://18.222.152.122:8081/repository/maven-snapshots/</url> 
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
